@@ -1,0 +1,48 @@
+---
+title: "Tutorial Title"
+vignette: >
+  %\VignetteIndexEntry{Tutorial Title}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+knitr:
+  opts_chunk:
+    collapse: true
+    comment: '#>'
+---
+
+```{r}
+#| label: setup
+library(rmedicine)
+```
+
+# This is a Quarto document
+
+Which means you can run R and Python code, and use Quarto chunk options.
+
+Here is R code, including from the current package: 
+
+```{r}
+print_hello_world(x = "Hello")
+```
+
+You can also include Python code (remember to add `reticulate` to `extra-packages` in the GitHub workflow):
+
+```{python}
+1 + 1
+```
+
+You can include math as well: 
+
+$$
+x^2 + y^2 = 9
+$$
+
+Some features, like callouts, don't work properly, but still look ok: 
+
+::: {.callout-warning}
+
+## Warning
+
+This is a warning.
+
+:::
