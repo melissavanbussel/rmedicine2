@@ -9,3 +9,51 @@ template:
   light-switch: true
   theme: atom-one-light
   theme-dark: atom-one-dark
+  includes:
+    after_body: |
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.addEventListener("click", function (e) {
+            if (typeof confetti === "function") {
+              const x = e.clientX / window.innerWidth;
+              const y = e.clientY / window.innerHeight;
+
+              confetti({
+                origin: { x: x, y: y }
+              });
+            }
+          });
+        });
+      </script>
+
+reference:
+  - title: ":pencil: Functions that print things"
+    desc: These functions will all print things to your console.
+  - subtitle: ":one: First subsection"
+    contents:
+      - print_hello_world
+  - subtitle: ":two: Second subsection"
+    contents:
+      - print_hello_rmedicine
+
+navbar:
+  structure:
+    right: [search, github, my_linkedin, lightswitch]
+  components:
+    my_linkedin:
+      icon: fa-linkedin
+      href: https://www.linkedin.com/in/melissavanbussel/
+      aria-label: LinkedIn
+   js_alert:
+      icon: fa-code
+      href: "#js_alert#"
+      aria-label: JavaScript
+
+footer:
+  structure:
+    left: developed_by
+    right: built_with_pkgdown
+  components:
+    developed_by: "Developed by [Melissa Van Bussel](https://melissavanbussel.com/) :computer: for the [R/Medicine 2025 Conference](https://rconsortium.github.io/RMedicine_website/)."
+    built_with_pkgdown: "This site was built using [pkgdown](https://pkgdown.r-lib.org/)!&nbsp;&nbsp;<img src='https://pkgdown.r-lib.org/logo.png' alt='pkgdown logo' width='25'>"
