@@ -1,4 +1,4 @@
-url: https://melissavanbussel.github.io/rmedicine2/
+url: https://melissavanbussel.github.io/rmedicine/
 template:
   bootstrap: 5
   bslib:
@@ -39,13 +39,13 @@ reference:
 
 navbar:
   structure:
-    right: [search, github, my_linkedin, lightswitch]
+    right: [search, github, my_linkedin, js_alert, lightswitch]
   components:
     my_linkedin:
       icon: fa-linkedin
       href: https://www.linkedin.com/in/melissavanbussel/
       aria-label: LinkedIn
-   js_alert:
+    js_alert:
       icon: fa-code
       href: "#js_alert#"
       aria-label: JavaScript
