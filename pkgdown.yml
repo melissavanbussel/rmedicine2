@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   tutorial: tutorial.html
-last_built: 2025-06-09T01:09Z
+last_built: 2025-06-09T01:29Z
 urls:
   reference: https://melissavanbussel.github.io/rmedicine/reference
   article: https://melissavanbussel.github.io/rmedicine/articles
