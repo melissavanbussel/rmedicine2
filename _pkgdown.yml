@@ -84,4 +84,11 @@ authors:
 
 home:
   sidebar:
-    structure: [links, authors]
+    structure: [badges, links, authors]
+    components:
+      badges:
+        title: Package badges
+        text: |
+          ![](https://img.shields.io/github/r-package/v/melissavanbussel/rmedicine?label=rmedicine)<br>
+          ![](https://img.shields.io/github/actions/workflow/status/melissavanbussel/rmedicine/pkgdown.yaml)<br>
+          ![](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmelissavanbussel.github.io%2Frmedicine%2Fcoverage.json&query=%24.coverage&label=test%20coverage)<br>
